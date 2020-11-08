@@ -1,0 +1,11 @@
+<h1>COUNT PAGE</h1>
+
+<a href="{% url 'homePage' %}">Go Start Again</a>
+<a href="{% url 'aboutPage' %}">About Us</a>
+<h2>Your text has {{count}} words !!!</h2>
+<h2>User text is : </h2>
+{{text}}
+
+{% for word, totalCount in sorted %}
+<h3>{{word}} -- {{totalCount}}</h3>
+{% endfor %}

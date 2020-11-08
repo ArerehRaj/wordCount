@@ -1,0 +1,12 @@
+<h1>WELCOME TO OUR HTML PAGE THROUGH DJANGO GUYS!!!</h1>
+<h2>WORD COUNT WEBSITE</h2>
+<br>
+{{variable}}
+
+<a href="{% url 'aboutPage' %}">About us</a>
+<form action="{% url 'count' %}">
+    <textarea name="userText" cols="30" rows="10" placeholder="Enter your text"></textarea>
+    <br>
+    <input type="submit" value="Count">
+    <br>
+</form>
